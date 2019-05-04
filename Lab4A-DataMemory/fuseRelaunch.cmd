@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/Workspace/CECS-341/Lab4A-DataMemory/DataMemory_tester_isim_beh.exe" -prj "D:/Workspace/CECS-341/Lab4A-DataMemory/DataMemory_tester_beh.prj" "work.DataMemory_tester" "work.glbl" 

@@ -1,0 +1,41 @@
+ISim log file
+Running: D:\Workspace\CECS-341\Lab5B-PCAndIM\Top5B_Tester_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Workspace/CECS-341/Lab5B-PCAndIM/Top5B_Tester_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 15 ns :  in File "D:/Workspace/CECS-341/Lab5B-PCAndIM/Top5B_Tester.v" Line 33 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 25 ns :  in File "D:/Workspace/CECS-341/Lab5B-PCAndIM/Top5B_Tester.v" Line 39 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 25 ns :  in File "D:/Workspace/CECS-341/Lab5B-PCAndIM/Top5B_Tester.v" Line 40 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 20 ns :  in File "D:/Workspace/CECS-341/Lab5B-PCAndIM/Top5B_Tester.v" Line 42 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 19500 ps :  in File "D:/Workspace/CECS-341/Lab5B-PCAndIM/Top5B_Tester.v" Line 42 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 100 ns :  in File "D:/Workspace/CECS-341/Lab5B-PCAndIM/Top5B_Tester.v" Line 106 

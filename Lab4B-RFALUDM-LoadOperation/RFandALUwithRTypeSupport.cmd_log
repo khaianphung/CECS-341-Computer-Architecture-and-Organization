@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/Workspace/CECS-341/Lab4B-RFALUDM-LoadOperation/RFandALUwithRTypeSupport.xst" -ofn "D:/Workspace/CECS-341/Lab4B-RFALUDM-LoadOperation/RFandALUwithRTypeSupport.syr" 

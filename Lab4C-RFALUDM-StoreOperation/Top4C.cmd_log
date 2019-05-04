@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/Workspace/CECS-341/Lab4C-RFALUDM-StoreOperation/Top4C.xst" -ofn "D:/Workspace/CECS-341/Lab4C-RFALUDM-StoreOperation/Top4C.syr" 
+xst -intstyle ise -ifn "D:/Workspace/CECS-341/Lab4C-RFALUDM-StoreOperation/Top4C.xst" -ofn "D:/Workspace/CECS-341/Lab4C-RFALUDM-StoreOperation/Top4C.syr" 

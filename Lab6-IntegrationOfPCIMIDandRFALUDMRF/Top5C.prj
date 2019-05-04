@@ -1,0 +1,4 @@
+verilog work "PC.v"
+verilog work "InstructionMemory.v"
+verilog work "InstructionDecoder.v"
+verilog work "Top5C.v"

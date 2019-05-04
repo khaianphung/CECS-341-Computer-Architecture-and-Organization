@@ -1,0 +1,7 @@
+verilog isim_temp "LEGv8.v"
+verilog isim_temp "ALUControl.v"
+verilog isim_temp "registerfile.v"
+verilog isim_temp "ALUwithControl.v"
+verilog isim_temp "RFandALUwithRTypeSupport.v"
+verilog isim_temp "RFandALUwithRTypeSupport_Tester.v"
+verilog isim_temp "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

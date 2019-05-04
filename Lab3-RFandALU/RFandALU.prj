@@ -1,0 +1,5 @@
+verilog work "LEGv8.v"
+verilog work "ALUControl.v"
+verilog work "registerfile.v"
+verilog work "ALUwithControl.v"
+verilog work "RFandALU.v"

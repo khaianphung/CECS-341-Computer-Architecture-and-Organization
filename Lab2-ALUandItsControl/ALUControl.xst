@@ -1,0 +1,5 @@
+set -tmpdir "D:/Workspace/CECS-341/Lab2-ALUandItsControl/xst/projnav.tmp"
+set -xsthdpdir "D:/Workspace/CECS-341/Lab2-ALUandItsControl/xst"
+elaborate
+-ifn ALUControl.prj
+-ifmt mixed

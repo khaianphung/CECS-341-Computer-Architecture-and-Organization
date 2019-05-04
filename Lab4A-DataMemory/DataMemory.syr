@@ -1,0 +1,434 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: DataMemory.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "DataMemory.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "DataMemory"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : DataMemory
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "DataMemory.v" in library work
+Module <DataMemory> compiled
+No errors in compilation
+Analysis of file <"DataMemory.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <DataMemory> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <DataMemory>.
+INFO:Xst:1433 - Contents of array <DM> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <DM> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <DM> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <DM> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <DM> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <DM> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1433 - Contents of array <DM> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+WARNING:Xst:905 - "DataMemory.v" line 12: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <DM>, <Address>
+Module <DataMemory> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <DataMemory>.
+    Related source file is "DataMemory.v".
+WARNING:Xst:647 - Input <MemRead> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit adder carry out for signal <COND_1$addsub0000>.
+    Found 8-bit adder carry out for signal <COND_2$addsub0000>.
+    Found 8-bit adder carry out for signal <COND_3$addsub0000>.
+    Found 8-bit adder carry out for signal <COND_4$addsub0000>.
+    Found 8-bit adder carry out for signal <COND_5$addsub0000>.
+    Found 8-bit adder carry out for signal <COND_6$addsub0000>.
+    Found 8-bit adder carry out for signal <COND_7$addsub0000>.
+    Found 1808-bit register for signal <DM>.
+    Found 8-bit 226-to-1 multiplexer for signal <ReadData$varindex0000> created at line 14.
+    Found 8-bit 226-to-1 multiplexer for signal <ReadData$varindex0001> created at line 14.
+    Found 8-bit 226-to-1 multiplexer for signal <ReadData$varindex0002> created at line 14.
+    Found 8-bit 226-to-1 multiplexer for signal <ReadData$varindex0003> created at line 14.
+    Found 8-bit 226-to-1 multiplexer for signal <ReadData$varindex0004> created at line 14.
+    Found 8-bit 226-to-1 multiplexer for signal <ReadData$varindex0005> created at line 14.
+    Found 8-bit 226-to-1 multiplexer for signal <ReadData$varindex0006> created at line 14.
+    Found 8-bit 226-to-1 multiplexer for signal <ReadData$varindex0007> created at line 14.
+INFO:Xst:738 - HDL ADVISOR - 1808 flip-flops were inferred for signal <DM>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred 1808 D-type flip-flop(s).
+	inferred   7 Adder/Subtractor(s).
+	inferred  64 Multiplexer(s).
+Unit <DataMemory> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 7
+ 8-bit adder carry out                                 : 7
+# Registers                                            : 226
+ 8-bit register                                        : 226
+# Multiplexers                                         : 8
+ 8-bit 226-to-1 multiplexer                            : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 7
+ 8-bit adder carry out                                 : 7
+# Registers                                            : 1808
+ Flip-Flops                                            : 1808
+# Multiplexers                                         : 8
+ 8-bit 226-to-1 multiplexer                            : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <DataMemory> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block DataMemory, actual ratio is 128.
+Optimizing block <DataMemory> to meet ratio 100 (+ 5) of 4656 slices :
+WARNING:Xst:2254 - Area constraint could not be met for block <DataMemory>, final ratio is 126.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1808
+ Flip-Flops                                            : 1808
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : DataMemory.ngr
+Top Level Output File Name         : DataMemory
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 139
+
+Cell Usage :
+# BELS                             : 18237
+#      INV                         : 2
+#      LUT2                        : 150
+#      LUT3                        : 4264
+#      LUT4                        : 6850
+#      MUXF5                       : 3770
+#      MUXF6                       : 1856
+#      MUXF7                       : 896
+#      MUXF8                       : 448
+#      VCC                         : 1
+# FlipFlops/Latches                : 1808
+#      FDE                         : 1808
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 137
+#      IBUF                        : 73
+#      OBUF                        : 64
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                     5885  out of   4656   126% (*) 
+ Number of Slice Flip Flops:           1808  out of   9312    19%  
+ Number of 4 input LUTs:              11266  out of   9312   120% (*) 
+ Number of IOs:                         139
+ Number of bonded IOBs:                 138  out of    232    59%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock                              | BUFGP                  | 1808  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 2.121ns (Maximum Frequency: 471.476MHz)
+   Minimum input arrival time before clock: 11.583ns
+   Maximum output required time after clock: 8.816ns
+   Maximum combinational path delay: 12.479ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 2.121ns (frequency: 471.476MHz)
+  Total number of paths / destination ports: 1800 / 1800
+-------------------------------------------------------------------------
+Delay:               2.121ns (Levels of Logic = 1)
+  Source:            DM_5_0 (FF)
+  Destination:       DM_5_0 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: DM_5_0 to DM_5_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              9   0.514   0.727  DM_5_0 (DM_5_0)
+     LUT3:I2->O            1   0.612   0.000  DM_5_mux0000<16>66 (DM_5_mux0000<16>)
+     FDE:D                     0.268          DM_5_0
+    ----------------------------------------
+    Total                      2.121ns (1.394ns logic, 0.727ns route)
+                                       (65.7% logic, 34.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 90936 / 3616
+-------------------------------------------------------------------------
+Offset:              11.583ns (Levels of Logic = 8)
+  Source:            Address<7> (PAD)
+  Destination:       DM_132_0 (FF)
+  Destination Clock: clock rising
+
+  Data Path: Address<7> to DM_132_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           197   1.106   1.269  Address_7_IBUF (Address_7_IBUF)
+     LUT2:I0->O           77   0.612   1.154  DM_128_cmp_eq0007111 (DM_160_and0000)
+     LUT4:I1->O           15   0.612   0.894  DM_128_cmp_eq000711 (DM_135_and0000)
+     LUT4:I2->O           48   0.612   1.229  DM_129_cmp_eq00001 (DM_129_cmp_eq0000)
+     LUT4:I0->O            1   0.612   0.509  DM_132_mux0000<7>29 (DM_132_mux0000<7>29)
+     LUT2:I0->O            1   0.612   0.360  DM_132_mux0000<7>35 (DM_132_mux0000<7>35)
+     LUT4:I3->O            1   0.612   0.509  DM_132_mux0000<7>4_SW0 (N1157)
+     LUT4:I0->O            1   0.612   0.000  DM_132_mux0000<7>44 (DM_132_mux0000<7>)
+     FDE:D                     0.268          DM_132_7
+    ----------------------------------------
+    Total                     11.583ns (5.658ns logic, 5.925ns route)
+                                       (48.8% logic, 51.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 14464 / 64
+-------------------------------------------------------------------------
+Offset:              8.816ns (Levels of Logic = 9)
+  Source:            DM_4_7 (FF)
+  Destination:       ReadData<63> (PAD)
+  Source Clock:      clock rising
+
+  Data Path: DM_4_7 to ReadData<63>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              9   0.514   0.766  DM_4_7 (DM_4_7)
+     LUT3:I1->O            1   0.612   0.000  Mmux_ReadData_varindex0000_16153 (Mmux_ReadData_varindex0000_16153)
+     MUXF5:I1->O           1   0.278   0.000  Mmux_ReadData_varindex0004_15_f5_43 (Mmux_ReadData_varindex0004_15_f544)
+     MUXF6:I0->O           1   0.451   0.000  Mmux_ReadData_varindex0004_13_f6_36 (Mmux_ReadData_varindex0004_13_f637)
+     MUXF7:I0->O           1   0.451   0.000  Mmux_ReadData_varindex0004_11_f7_29 (Mmux_ReadData_varindex0004_11_f730)
+     MUXF8:I0->O           1   0.451   0.426  Mmux_ReadData_varindex0004_9_f8_22 (Mmux_ReadData_varindex0004_9_f823)
+     LUT3:I1->O            1   0.612   0.000  Mmux_ReadData_varindex0004_67 (Mmux_ReadData_varindex0004_67)
+     MUXF5:I0->O           1   0.278   0.000  Mmux_ReadData_varindex0004_4_f5_6 (Mmux_ReadData_varindex0004_4_f57)
+     MUXF6:I0->O           1   0.451   0.357  Mmux_ReadData_varindex0004_2_f6_6 (ReadData_31_OBUF)
+     OBUF:I->O                 3.169          ReadData_31_OBUF (ReadData<31>)
+    ----------------------------------------
+    Total                      8.816ns (7.267ns logic, 1.549ns route)
+                                       (82.4% logic, 17.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 30920 / 64
+-------------------------------------------------------------------------
+Delay:               12.479ns (Levels of Logic = 9)
+  Source:            Address<2> (PAD)
+  Destination:       ReadData<55> (PAD)
+
+  Data Path: Address<2> to ReadData<55>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           694   1.106   1.351  Address_2_IBUF (Address_2_IBUF)
+     LUT3:I0->O           26   0.612   1.223  DM_22_or000011 (N246)
+     LUT3:I0->O          112   0.612   1.094  Madd_COND_1_addsub0000_xor<4>11 (COND_1_addsub0000<4>)
+     MUXF7:S->O            1   0.737   0.000  Mmux_ReadData_varindex0001_8_f7 (Mmux_ReadData_varindex0001_8_f7)
+     MUXF8:I1->O           1   0.451   0.426  Mmux_ReadData_varindex0001_7_f8 (Mmux_ReadData_varindex0001_7_f8)
+     LUT3:I1->O            1   0.612   0.000  Mmux_ReadData_varindex0001_4 (Mmux_ReadData_varindex0001_4)
+     MUXF5:I1->O           1   0.278   0.000  Mmux_ReadData_varindex0001_3_f5 (Mmux_ReadData_varindex0001_3_f5)
+     MUXF6:I1->O           1   0.451   0.357  Mmux_ReadData_varindex0001_2_f6 (ReadData_48_OBUF)
+     OBUF:I->O                 3.169          ReadData_48_OBUF (ReadData<48>)
+    ----------------------------------------
+    Total                     12.479ns (8.028ns logic, 4.451ns route)
+                                       (64.3% logic, 35.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 83.00 secs
+Total CPU time to Xst completion: 82.36 secs
+ 
+--> 
+
+Total memory usage is 488628 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    8 (   0 filtered)
+

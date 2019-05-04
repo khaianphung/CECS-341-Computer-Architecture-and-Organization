@@ -1,0 +1,27 @@
+ISim log file
+Running: D:\Workspace\CECS-341\Lab8-PipelinedARMProcessor\Top8_Tester_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Workspace/CECS-341/Lab8-PipelinedARMProcessor/Top8_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+WARNING: For instance uut/Mux1/, width 64 of formal port A is not equal to width 5 of actual.
+WARNING: For instance uut/Mux1/, width 64 of formal port B is not equal to width 5 of actual.
+WARNING: File "D:/Workspace/CECS-341/Lab8-PipelinedARMProcessor/Top8.v" Line 26.  For instance uut/Mux1/, width 64 of formal port Output is not equal to width 5 of actual signal Mux1Out.
+WARNING: File "D:/Workspace/CECS-341/Lab8-PipelinedARMProcessor/Top8.v" Line 32.  For instance uut/SE/, width 32 of formal port SEin is not equal to width 96 of actual signal PR1Out.
+WARNING: For instance uut/DM/, width 8 of formal port Address is not equal to width 64 of actual.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 200 ns :  in File "D:/Workspace/CECS-341/Lab8-PipelinedARMProcessor/Top8_Tester.v" Line 164 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+WARNING: For instance uut/Mux1/, width 64 of formal port A is not equal to width 5 of actual.
+WARNING: For instance uut/Mux1/, width 64 of formal port B is not equal to width 5 of actual.
+WARNING: File "D:/Workspace/CECS-341/Lab8-PipelinedARMProcessor/Top8.v" Line 26.  For instance uut/Mux1/, width 64 of formal port Output is not equal to width 5 of actual signal Mux1Out.
+WARNING: File "D:/Workspace/CECS-341/Lab8-PipelinedARMProcessor/Top8.v" Line 32.  For instance uut/SE/, width 32 of formal port SEin is not equal to width 96 of actual signal PR1Out.
+WARNING: For instance uut/DM/, width 8 of formal port Address is not equal to width 64 of actual.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 200 ns :  in File "D:/Workspace/CECS-341/Lab8-PipelinedARMProcessor/Top8_Tester.v" Line 164 

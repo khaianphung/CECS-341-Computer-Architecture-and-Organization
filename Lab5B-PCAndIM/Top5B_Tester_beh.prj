@@ -1,0 +1,5 @@
+verilog work "PC.v"
+verilog work "InstructionMemory.v"
+verilog work "Top5B.v"
+verilog work "Top5B_Tester.v"
+verilog work "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

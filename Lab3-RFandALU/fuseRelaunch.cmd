@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/Workspace/CECS-341/Lab3-RFandALU/RFandALUwithRTypeSupport_tester_isim_beh.exe" -prj "D:/Workspace/CECS-341/Lab3-RFandALU/RFandALUwithRTypeSupport_tester_beh.prj" "work.RFandALUwithRTypeSupport_tester" "work.glbl" 

@@ -1,0 +1,5 @@
+set -tmpdir "D:/Workspace/CECS-341/Lab3-RFandALU/xst/projnav.tmp"
+set -xsthdpdir "D:/Workspace/CECS-341/Lab3-RFandALU/xst"
+elaborate
+-ifn registerfile.prj
+-ifmt mixed

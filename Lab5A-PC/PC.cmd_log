@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/Workspace/CECS-341/Lab5A-PC/PC.xst" -ofn "D:/Workspace/CECS-341/Lab5A-PC/PC.syr" 

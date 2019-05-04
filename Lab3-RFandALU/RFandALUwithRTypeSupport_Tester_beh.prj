@@ -1,0 +1,7 @@
+verilog work "LEGv8.v"
+verilog work "ALUControl.v"
+verilog work "registerfile.v"
+verilog work "ALUwithControl.v"
+verilog work "RFandALUwithRTypeSupport.v"
+verilog work "RFandALUwithRTypeSupport_tester.v"
+verilog work "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

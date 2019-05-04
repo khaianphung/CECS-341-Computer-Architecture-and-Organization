@@ -1,0 +1,414 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: PC.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "PC.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "PC"
+Output Format                      : NGC
+Target Device                      : xa7a100t-2I-csg324
+
+---- Source Options
+Top Module Name                    : PC
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\Workspace\CECS-341\Lab5A-PC\PC.v" into library work
+Parsing module <PC>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <PC>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <PC>.
+    Related source file is "D:\Workspace\CECS-341\Lab5A-PC\PC.v".
+WARNING:Xst:647 - Input <PCIn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 64-bit register for signal <PCOut>.
+    Found 64-bit adder for signal <AdderOut> created at line 16.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  64 D-type flip-flop(s).
+Unit <PC> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 64-bit adder                                          : 1
+# Registers                                            : 1
+ 64-bit register                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst - The specified part-type was not generated at build time. XST is loading the full part-type and will therefore consume more CPU and memory.
+Loading device for application Rf_Device from file '7a100t.nph' in environment D:\Xilinx\14.7\ISE_DS\ISE\.
+Loading device for application Rf_Device from file '7a100t.nph' in environment D:\Xilinx\14.7\ISE_DS\ISE\.
+
+Synthesizing (advanced) Unit <PC>.
+The following registers are absorbed into accumulator <PCOut>: 1 register on signal <PCOut>.
+Unit <PC> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Accumulators                                         : 1
+ 64-bit up accumulator                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <PCOut_0> (without init value) has a constant value of 0 in block <PC>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PCOut_1> (without init value) has a constant value of 0 in block <PC>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <PC> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block PC, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 62
+ Flip-Flops                                            : 62
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : PC.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 187
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 61
+#      MUXCY                       : 61
+#      VCC                         : 1
+#      XORCY                       : 62
+# FlipFlops/Latches                : 62
+#      FD                          : 62
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 64
+#      OBUF                        : 64
+
+Device utilization summary:
+---------------------------
+
+Selected Device : xa7a100tcsg324-2i 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              62  out of  126800     0%  
+ Number of Slice LUTs:                   62  out of  63400     0%  
+    Number used as Logic:                62  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     62
+   Number with an unused Flip Flop:       0  out of     62     0%  
+   Number with an unused LUT:             0  out of     62     0%  
+   Number of fully used LUT-FF pairs:    62  out of     62   100%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                         129
+ Number of bonded IOBs:                  65  out of    210    30%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock                              | BUFGP                  | 62    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 2.929ns (Maximum Frequency: 341.384MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 0.705ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 2.929ns (frequency: 341.384MHz)
+  Total number of paths / destination ports: 1953 / 62
+-------------------------------------------------------------------------
+Delay:               2.929ns (Levels of Logic = 63)
+  Source:            PCOut_2 (FF)
+  Destination:       PCOut_63 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: PCOut_2 to PCOut_63
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.361   0.344  PCOut_2 (PCOut_2)
+     INV:I->O              1   0.113   0.000  Maccum_PCOut_lut<2>_INV_0 (Maccum_PCOut_lut<2>)
+     MUXCY:S->O            1   0.353   0.000  Maccum_PCOut_cy<2> (Maccum_PCOut_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<3> (Maccum_PCOut_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<4> (Maccum_PCOut_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<5> (Maccum_PCOut_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<6> (Maccum_PCOut_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<7> (Maccum_PCOut_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<8> (Maccum_PCOut_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<9> (Maccum_PCOut_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<10> (Maccum_PCOut_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<11> (Maccum_PCOut_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<12> (Maccum_PCOut_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<13> (Maccum_PCOut_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<14> (Maccum_PCOut_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<15> (Maccum_PCOut_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<16> (Maccum_PCOut_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<17> (Maccum_PCOut_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<18> (Maccum_PCOut_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<19> (Maccum_PCOut_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<20> (Maccum_PCOut_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<21> (Maccum_PCOut_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<22> (Maccum_PCOut_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<23> (Maccum_PCOut_cy<23>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<24> (Maccum_PCOut_cy<24>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<25> (Maccum_PCOut_cy<25>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<26> (Maccum_PCOut_cy<26>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<27> (Maccum_PCOut_cy<27>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<28> (Maccum_PCOut_cy<28>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<29> (Maccum_PCOut_cy<29>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<30> (Maccum_PCOut_cy<30>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<31> (Maccum_PCOut_cy<31>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<32> (Maccum_PCOut_cy<32>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<33> (Maccum_PCOut_cy<33>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<34> (Maccum_PCOut_cy<34>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<35> (Maccum_PCOut_cy<35>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<36> (Maccum_PCOut_cy<36>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<37> (Maccum_PCOut_cy<37>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<38> (Maccum_PCOut_cy<38>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<39> (Maccum_PCOut_cy<39>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<40> (Maccum_PCOut_cy<40>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<41> (Maccum_PCOut_cy<41>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<42> (Maccum_PCOut_cy<42>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<43> (Maccum_PCOut_cy<43>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<44> (Maccum_PCOut_cy<44>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<45> (Maccum_PCOut_cy<45>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<46> (Maccum_PCOut_cy<46>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<47> (Maccum_PCOut_cy<47>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<48> (Maccum_PCOut_cy<48>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<49> (Maccum_PCOut_cy<49>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<50> (Maccum_PCOut_cy<50>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<51> (Maccum_PCOut_cy<51>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<52> (Maccum_PCOut_cy<52>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<53> (Maccum_PCOut_cy<53>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<54> (Maccum_PCOut_cy<54>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<55> (Maccum_PCOut_cy<55>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<56> (Maccum_PCOut_cy<56>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<57> (Maccum_PCOut_cy<57>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<58> (Maccum_PCOut_cy<58>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<59> (Maccum_PCOut_cy<59>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<60> (Maccum_PCOut_cy<60>)
+     MUXCY:CI->O           1   0.023   0.000  Maccum_PCOut_cy<61> (Maccum_PCOut_cy<61>)
+     MUXCY:CI->O           0   0.023   0.000  Maccum_PCOut_cy<62> (Maccum_PCOut_cy<62>)
+     XORCY:CI->O           1   0.370   0.000  Maccum_PCOut_xor<63> (Result<63>)
+     FD:D                      0.008          PCOut_63
+    ----------------------------------------
+    Total                      2.929ns (2.585ns logic, 0.344ns route)
+                                       (88.2% logic, 11.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 62 / 62
+-------------------------------------------------------------------------
+Offset:              0.705ns (Levels of Logic = 1)
+  Source:            PCOut_63 (FF)
+  Destination:       PCOut<63> (PAD)
+  Source Clock:      clock rising
+
+  Data Path: PCOut_63 to PCOut<63>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.361   0.344  PCOut_63 (PCOut_63)
+     OBUF:I->O                 0.000          PCOut_63_OBUF (PCOut<63>)
+    ----------------------------------------
+    Total                      0.705ns (0.361ns logic, 0.344ns route)
+                                       (51.2% logic, 48.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |    2.929|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 29.00 secs
+Total CPU time to Xst completion: 29.00 secs
+ 
+--> 
+
+Total memory usage is 800680 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

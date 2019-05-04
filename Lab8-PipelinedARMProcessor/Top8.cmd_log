@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/Workstation/CECS-341/Lab8-PipelinedARMProcessor/Top8.xst" -ofn "D:/Workstation/CECS-341/Lab8-PipelinedARMProcessor/Top8.syr" 

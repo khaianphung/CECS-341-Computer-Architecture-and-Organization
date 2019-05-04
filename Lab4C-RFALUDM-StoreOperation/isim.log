@@ -1,0 +1,25 @@
+ISim log file
+Running: D:\Workstation\CECS-341\Lab4C-RFALUDM-StoreOperation\Top4C_Tester_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Workstation/CECS-341/Lab4C-RFALUDM-StoreOperation/Top4C_Tester_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+WARNING: File "D:/Workstation/CECS-341/Lab4C-RFALUDM-StoreOperation/Top4C.v" Line 3.  For instance uut/Mux0/, width 64 of formal port A is not equal to width 5 of actual signal Rm.
+WARNING: File "D:/Workstation/CECS-341/Lab4C-RFALUDM-StoreOperation/Top4C.v" Line 3.  For instance uut/Mux0/, width 64 of formal port B is not equal to width 5 of actual signal Rt.
+WARNING: File "D:/Workstation/CECS-341/Lab4C-RFALUDM-StoreOperation/Top4C.v" Line 9.  For instance uut/Mux0/, width 64 of formal port Output is not equal to width 5 of actual signal Mux0ToReg.
+WARNING: File "D:/Workstation/CECS-341/Lab4C-RFALUDM-StoreOperation/Top4C.v" Line 10.  For instance uut/DM/, width 8 of formal port Address is not equal to width 64 of actual signal ALUToDMAndMux2.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 210 ns :  in File "D:/Workstation/CECS-341/Lab4C-RFALUDM-StoreOperation/Top4C_Tester.v" Line 209 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+WARNING: File "D:/Workstation/CECS-341/Lab4C-RFALUDM-StoreOperation/Top4C.v" Line 3.  For instance uut/Mux0/, width 64 of formal port A is not equal to width 5 of actual signal Rm.
+WARNING: File "D:/Workstation/CECS-341/Lab4C-RFALUDM-StoreOperation/Top4C.v" Line 3.  For instance uut/Mux0/, width 64 of formal port B is not equal to width 5 of actual signal Rt.
+WARNING: File "D:/Workstation/CECS-341/Lab4C-RFALUDM-StoreOperation/Top4C.v" Line 9.  For instance uut/Mux0/, width 64 of formal port Output is not equal to width 5 of actual signal Mux0ToReg.
+WARNING: File "D:/Workstation/CECS-341/Lab4C-RFALUDM-StoreOperation/Top4C.v" Line 10.  For instance uut/DM/, width 8 of formal port Address is not equal to width 64 of actual signal ALUToDMAndMux2.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 210 ns :  in File "D:/Workstation/CECS-341/Lab4C-RFALUDM-StoreOperation/Top4C_Tester.v" Line 209 

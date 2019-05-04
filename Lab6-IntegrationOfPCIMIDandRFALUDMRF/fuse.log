@@ -1,0 +1,45 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Workspace/CECS-341/Lab6-IntegrationOfPCIMIDandRFALUDMRF/Top6_Tester_isim_beh.exe" -prj "D:/Workspace/CECS-341/Lab6-IntegrationOfPCIMIDandRFALUDMRF/Top6_Tester_beh.prj" "work.Top6_Tester" "work.glbl" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/Workspace/CECS-341/Lab6-IntegrationOfPCIMIDandRFALUDMRF/LEGv8.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS-341/Lab6-IntegrationOfPCIMIDandRFALUDMRF/ALUControl.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS-341/Lab6-IntegrationOfPCIMIDandRFALUDMRF/SignedExtender.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS-341/Lab6-IntegrationOfPCIMIDandRFALUDMRF/registerfile.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS-341/Lab6-IntegrationOfPCIMIDandRFALUDMRF/PC.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS-341/Lab6-IntegrationOfPCIMIDandRFALUDMRF/Mux2to1.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS-341/Lab6-IntegrationOfPCIMIDandRFALUDMRF/InstructionMemory.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS-341/Lab6-IntegrationOfPCIMIDandRFALUDMRF/InstructionDecoder.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS-341/Lab6-IntegrationOfPCIMIDandRFALUDMRF/DataMemory.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS-341/Lab6-IntegrationOfPCIMIDandRFALUDMRF/ALUwithControl.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS-341/Lab6-IntegrationOfPCIMIDandRFALUDMRF/Top5C.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS-341/Lab6-IntegrationOfPCIMIDandRFALUDMRF/Top4C.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS-341/Lab6-IntegrationOfPCIMIDandRFALUDMRF/Top6.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS-341/Lab6-IntegrationOfPCIMIDandRFALUDMRF/Top6_Tester.v" into library work
+Analyzing Verilog file "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "D:/Workspace/CECS-341/Lab6-IntegrationOfPCIMIDandRFALUDMRF/Top4C.v" Line 11: Size mismatch in connection of port <A>. Formal port size is 64-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:189 - "D:/Workspace/CECS-341/Lab6-IntegrationOfPCIMIDandRFALUDMRF/Top4C.v" Line 19: Size mismatch in connection of port <Address>. Formal port size is 8-bit while actual signal size is 64-bit.
+Completed static elaboration
+Compiling module Mux2to1
+Compiling module registerfile
+Compiling module SignedExtender
+Compiling module ALUControl
+Compiling module LEGv8
+Compiling module ALUwithControl
+Compiling module DataMemory
+Compiling module Top4C
+Compiling module PC
+Compiling module InstructionDecoder
+Compiling module InstructionMemory
+Compiling module Top5C
+Compiling module Top6
+Compiling module Top6_Tester
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 15 Verilog Units
+Built simulation executable D:/Workspace/CECS-341/Lab6-IntegrationOfPCIMIDandRFALUDMRF/Top6_Tester_isim_beh.exe
+Fuse Memory Usage: 32360 KB
+Fuse CPU Usage: 483 ms

@@ -1,0 +1,55 @@
+#5;
+		WriteReg=1;
+		Read1=5;
+		Read2=10;		
+		{ALUOp, Opcode}=13'b10_10001010000;
+		RegWrite=1;
+		#5;
+		clock=1;
+		#10;
+		clock=0;
+		RegWrite=0;
+		
+		#5;
+		WriteReg=2;
+		{ALUOp, Opcode}=13'b10_10101010000;
+		RegWrite=1;
+		#5;
+		clock=1;
+		#10;
+		clock=0;
+		RegWrite=0;
+		
+		#5;
+		WriteReg=3;
+		{ALUOp, Opcode}=13'b10_10001011000;
+		RegWrite=1;
+		#5;
+		clock=1;
+		#10;
+		clock=0;
+		RegWrite=0;
+		
+		#5;
+		WriteReg=4;
+		{ALUOp, Opcode}=13'b10_11001011000;
+		RegWrite=1;
+		#5;
+		clock=1;
+		#10;
+		clock=0;
+		RegWrite=0;
+		
+		#5;
+		Read2=1;
+		{ALUOp, Opcode}=13'b10_11111000010;
+		#5;
+		Read2=2;
+		{ALUOp, Opcode}=13'b10_11111000010;
+		#5;
+		Read2=3;
+		{ALUOp, Opcode}=13'b10_11111000010;
+		#5;
+		Read2=4;
+		{ALUOp, Opcode}=13'b10_11111000010;
+		#5;
